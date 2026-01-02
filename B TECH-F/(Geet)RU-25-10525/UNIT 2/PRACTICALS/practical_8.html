@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CSS Selectors </title>
+
+    <style>
+        /* ===== Universal Selector ===== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333333;
+        }
+
+        header {
+            background-color: #87ceeb;
+            text-align: center;
+            padding: 25px;
+            color: #ffffff;
+            border-bottom: 3px solid #00bfff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px #888888;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #f0f8ff;
+        }
+
+        /* ===== Class Selector ===== */
+        .highlight {
+            background-color: #ffefd5;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        /* ===== ID Selector ===== */
+        #main-title {
+            color: #4682b4;
+            text-shadow: 1px 1px 2px #aaa;
+            font-size: 2rem;
+        }
+
+        /* ===== Descendant Selector ===== */
+        section p {
+            color: #555555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* ===== Group Selector ===== */
+        h2,
+        h3 {
+            color: #1e90ff;
+            margin-bottom: 8px;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .box {
+            background-color: #ffffff;
+            border: 2px solid #87ceeb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(135, 206, 235, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(135, 206, 235, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="main-title">CSS Selectors </h1>
+        <p>Class • ID • Descendant • Group • Universal</p>
+    </header>
+
+    <main>
+        <section class="box">
+            <h2>Class Selector Example</h2>
+            <p class="highlight">
+                This paragraph uses a <strong>class selector</strong>. Class selectors start with a dot (.) and can be
+                applied to multiple elements.
+            </p>
+        </section>
+
+        <section class="box">
+            <h2>ID Selector Example</h2>
+            <p id="unique-paragraph">
+                This paragraph uses an <strong>ID selector</strong>. ID selectors start with a hash (#) and should be
+                unique on a page.
+            </p>
+        </section>
+
+        <section class="box">
+            <h2>Descendant Selector Example</h2>
+            <div>
+                <p>
+                    This paragraph is selected using a <strong>descendant selector</strong> (section p). It targets any
+                    <code>&lt;p&gt;</code> inside a <code>&lt;section&gt;</code>.
+                </p>
+            </div>
+        </section>
+
+        <section class="box">
+            <h2>Group Selector Example</h2>
+            <h3>Heading 3</h3>
+            <p>This paragraph and heading above demonstrate a <strong>group selector</strong>. Multiple elements are
+                styled together separated by a comma.</p>
+        </section>
+
+        <section class="box">
+            <h2>Universal Selector Example</h2>
+            <p>
+                The universal selector (*) applies styles to <strong>all elements</strong>. Here it sets box-sizing,
+                margin, and padding for every element on the page.
+            </p>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

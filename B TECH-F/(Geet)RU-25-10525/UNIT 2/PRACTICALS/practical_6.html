@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Inline, Internal, External CSS</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cyber.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #0a192f;
+            color: #e0fbfc;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #00b4d8, #0077b6);
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            color: white;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        section {
+            padding: 25px;
+        }
+
+        .internal-box {
+            background-color: #1a1a2e;
+            border: 2px solid #00b4d8;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 10px #00b4d8;
+        }
+
+        .internal-box h2 {
+            color: #90e0ef;
+        }
+
+        .internal-box p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Webpage using Inline, Internal, and External CSS</h1>
+    </header>
+
+    <section>
+        <div class="internal-box">
+            <h2> Internal CSS Example</h2>
+            <p>
+                This section is styled using <strong>Internal CSS</strong> which is written inside the
+                <code>&lt;style&gt;</code> tag in the head section of this document.
+                It gives a professional look using cyber-inspired colors and glowing effects.
+            </p>
+        </div>
+
+        <div class="external-box">
+            <h2> External CSS Example</h2>
+            <p>
+                This box uses <strong>External CSS</strong> that is stored separately in the
+                <em>cyber.css</em> file.
+                External CSS makes the design reusable and cleaner, just like how
+                Artificial Intelligence models reuse patterns efficiently!
+            </p>
+        </div>
+
+        <div>
+            <h2> Inline CSS Example</h2>
+            <p
+                style="background-color: #112240; color: #64ffda; border-left: 5px solid #00b4d8; padding: 15px; border-radius: 8px; font-size: 16px;">
+                This paragraph is styled using <strong>Inline CSS</strong> — applied directly within the HTML tag
+                using the <em>style</em> attribute. Inline styles are quick to use, but not suitable for large projects.
+            </p>
+        </div>
+    </section>
+
+    <footer style="background:#0077b6; text-align:center; padding:15px; color:white;">
+        <p>Created by Geet 2025</p>
+    </footer>
+
+</body>
+
+</html>

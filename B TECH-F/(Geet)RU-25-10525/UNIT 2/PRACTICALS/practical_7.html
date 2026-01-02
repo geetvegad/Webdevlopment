@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Advanced CSS Demonstration</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 30px;
+            border-bottom: 4px solid #00b4d8;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #00b4d8;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #caf0f8;
+        }
+
+
+        main {
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+
+        .box {
+            background-color: rgba(3, 4, 94, 0.85);
+            width: 300px;
+            border: 3px solid #00b4d8;
+            border-radius: 12px;
+            margin: 20px;
+            padding: 25px;
+            box-shadow: 0 0 15px #00b4d8;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px #00b4d8;
+        }
+
+        .box h2 {
+            color: #90e0ef;
+            border-bottom: 2px solid #00b4d8;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 15px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Advanced CSS Styling</h1>
+        <p>Box Model • Background Image • Borders • Margins • Padding</p>
+    </header>
+
+    <main>
+        <div class="box">
+            <h2> Artificial Intelligence</h2>
+            <p>
+                Artificial Intelligence enables machines to learn from experience and
+                perform human-like tasks. This box uses margin, padding, and border
+                to demonstrate the **CSS Box Model** concept.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2> Cyber Security</h2>
+            <p>
+                Cyber security helps protect systems, networks, and data
+                from online threats. The spacing and layout here are managed
+                using **margins** and **padding** for a clean appearance.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2> Cloud Computing</h2>
+            <p>
+                Cloud computing allows data to be stored and processed over
+                the internet. Borders and box shadows make this content
+                stand out beautifully against the background image.
+            </p>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

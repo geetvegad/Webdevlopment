@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Div and Span Example with Explanation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            text-align: center;
+            padding: 2rem 1rem;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .header span {
+            font-weight: bold;
+            color: #ffeb3b;
+
+        }
+
+
+        .nav {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .nav span {
+            display: inline-block;
+            margin: 0.3rem;
+            padding: 0.5rem 1rem;
+            background-color: #6a11cb;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav span:hover {
+            background-color: #2575fc;
+            transform: translateY(-2px);
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            color: #6a11cb;
+            margin-bottom: 0.5rem;
+        }
+
+        .card span {
+            color: #555;
+
+            font-size: 0.95rem;
+        }
+
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (min-width: 900px) {
+            body {
+                padding: 2rem 5rem;
+            }
+
+            .card {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+
+        <h1>Welcome to <span>My Website</span></h1>
+
+        <p><span>Responsive layout using div and span elements</span></p>
+    </div>
+
+
+    <div class="nav">
+
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Contact</span>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>HTML & CSS</h2>
+            <span>Use div for layout sections and span for inline text styling.</span>
+        </div>
+
+        <div class="card">
+            <h2>Responsive Design</h2>
+            <span>Media queries adjust layout for tablets and desktops for a flexible experience.</span>
+        </div>
+
+        <div class="card">
+            <h2>Web Development</h2>
+            <span>Create modern websites using div, span, CSS styling, and hover effects.</span>
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+        © 2025 | Created by <span>GEET</span>
+
+    </div>
+
+</body>
+
+</html>

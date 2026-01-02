@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Validation Demo</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="practical_14.css" />
+</head>
+<body>
+  <h2>Signup Form</h2>
+
+  <form id="signupForm">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" />
+      <div id="nameMsg" class="error"></div>
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" />
+      <div id="emailMsg" class="error"></div>
+    </div>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Min 8 chars, 1 number" />
+      <div id="passwordMsg" class="error"></div>
+    </div>
+
+    <button id="submitBtn" type="submit">Create account</button>
+  </form>
+
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
